@@ -330,7 +330,7 @@
             <li><span aria-hidden="true">•</span> Schnelle Umsetzung</li>
           </ul>
         </div>
-        <form class="space-y-4 rounded-2xl bg-white p-6 shadow-soft ring-1 ring-slate-200" action="#" method="post" aria-label="Kontaktformular">
+        <form class="space-y-4 rounded-2xl bg-white p-6 shadow-soft ring-1 ring-slate-200" action="/api/contact" method="post" aria-label="Kontaktformular" data-contact-form>
           <div class="grid gap-4 sm:grid-cols-2">
             <div class="flex flex-col gap-1">
               <label class="text-sm font-medium text-slate-700" for="first-name">Vorname*</label>
@@ -349,7 +349,8 @@
             <label class="text-sm font-medium text-slate-700" for="message">Ihre Anfrage</label>
             <textarea id="message" name="message" rows="3" class="w-full rounded-lg bg-slate-50 px-4 py-3 ring-1 ring-slate-200 outline-none transition focus:ring-2 focus:ring-brand-600" placeholder="Wie können wir helfen?"></textarea>
           </div>
-          <button type="submit" class="w-full rounded-lg bg-brand-600 py-3 font-semibold text-white shadow-glow transition hover:bg-brand-700">Unverbindlich anfragen</button>
+          <button type="submit" class="w-full rounded-lg bg-brand-600 py-3 font-semibold text-white shadow-glow transition hover:bg-brand-700" data-contact-submit>Unverbindlich anfragen</button>
+          <p class="min-h-[1.25rem] text-sm text-slate-500" data-contact-status role="status" aria-live="polite"></p>
           <p class="text-xs text-slate-500">Mit Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäss Datenschutz zu.</p>
         </form>
       </div>
@@ -382,6 +383,7 @@
       });
     }
   </script>
+  <script src="assets/js/contact.js"></script>
 </body>
 </html>
 
