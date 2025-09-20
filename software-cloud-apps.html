@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software, Cloud &amp; Apps für Quorion Kassensysteme | MK Kassen</title>
+  <meta name="description" content="QMP Kassensoftware, QCloud Info, Login, Tischbestellungs-App, POS Displays &amp; QSC. Digitale Prozesse, Reporting und Fernwartung für Quorion Kassensysteme in der Schweiz." />
+  <link rel="canonical" href="https://mkkassen.com/software-cloud-apps" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50: '#eef5ff',
+              100: '#d9e8ff',
+              200: '#b7d2ff',
+              300: '#8fb5ff',
+              400: '#5a92ff',
+              500: '#2a73ff',
+              600: '#155eef',
+              700: '#0e4ed6',
+              800: '#0b3ea9',
+              900: '#0a317f'
+            },
+            accent: {
+              50: '#eafff7',
+              200: '#bff6e5',
+              500: '#00C48C',
+              600: '#07b07e'
+            },
+            ink: {
+              900: '#101828'
+            }
+          },
+          boxShadow: {
+            glow: '0 10px 30px -10px rgba(42,115,255,.35), 0 6px 18px -8px rgba(2,6,23,.2)',
+            soft: '0 10px 25px -12px rgba(2,6,23,.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection {
+      background: #dbeafe;
+      color: #0a317f;
+    }
+    .prose-li {
+      margin: .35rem 0;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+  <a class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow-soft" href="#main">Zum Inhalt springen</a>
+
+  <header class="fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mt-3 rounded-2xl border border-white/20 bg-white/60 backdrop-blur-xl shadow-soft">
+        <div class="flex h-16 items-center justify-between px-5">
+          <a class="text-lg font-extrabold tracking-tight text-ink-900 md:text-xl" href="/">
+            MK Kassen
+          </a>
+          <nav class="hidden items-center gap-7 text-[15px] md:flex" aria-label="Hauptnavigation">
+            <a href="index.html#kassen" class="transition hover:text-brand-700">Start &amp; Übersicht</a>
+            <a href="kassensysteme.html" class="transition hover:text-brand-700">Kassensysteme</a>
+            <a href="#module" class="transition hover:text-brand-700">Module</a>
+            <a href="#workflows" class="transition hover:text-brand-700">Workflows</a>
+            <a href="#integrationen" class="transition hover:text-brand-700">Integrationen</a>
+            <a href="#kontakt" class="transition hover:text-brand-700">Kontakt</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <a href="#kontakt" class="hidden rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-700 sm:inline-flex">Demo anfragen</a>
+            <button type="button" class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-semibold text-ink-900 shadow-soft transition hover:bg-slate-100 md:hidden" data-mobile-nav-trigger aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Navigation öffnen</span>
+              <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden border-t border-white/30 bg-white/95 backdrop-blur-xl md:hidden">
+      <nav class="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4 text-sm font-medium" aria-label="Mobile Navigation">
+        <a class="rounded-lg px-3 py-2 transition hover:bg-brand-50" href="index.html#kassen">Start &amp; Übersicht</a>
+        <a class="rounded-lg px-3 py-2 transition hover:bg-brand-50" href="kassensysteme.html">Kassensysteme</a>
+        <a class="rounded-lg px-3 py-2 transition hover:bg-brand-50" href="#module">Module</a>
+        <a class="rounded-lg px-3 py-2 transition hover:bg-brand-50" href="#workflows">Workflows</a>
+        <a class="rounded-lg px-3 py-2 transition hover:bg-brand-50" href="#integrationen">Integrationen</a>
+        <a class="rounded-lg px-3 py-2 transition hover:bg-brand-50" href="#kontakt">Kontakt</a>
+        <a class="rounded-lg bg-brand-600 px-3 py-2 text-white shadow-glow transition hover:bg-brand-700" href="#kontakt">Demo anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="pt-24">
+    <section class="radial relative overflow-hidden py-24">
+      <div class="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(255,255,255,.9),rgba(255,255,255,.25)_70%)]"></div>
+      <div class="relative z-10 mx-auto max-w-4xl px-4 text-center text-ink-900">
+        <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs font-medium text-slate-600 backdrop-blur">
+          <span class="h-2 w-2 rounded-full bg-accent-500"></span>
+          Software, Cloud &amp; Apps für Quorion
+        </p>
+        <h1 class="mt-6 text-4xl font-extrabold leading-tight md:text-5xl">Digitale Prozesse &amp; Reporting aus einer Hand</h1>
+        <p class="mt-4 text-lg text-slate-600">Steuern Sie Ihr Geschäft in Echtzeit: QMP Kassensoftware, QCloud Services und Apps für Self-Ordering, Fernwartung und Kundenerlebnis – abgestimmt auf Schweizer Anforderungen.</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="#module" class="rounded-xl bg-ink-900 px-5 py-3 font-semibold text-white shadow-soft transition hover:bg-black">Module ansehen</a>
+          <a href="#kontakt" class="rounded-xl bg-white px-5 py-3 font-semibold text-ink-900 ring-1 ring-slate-200 transition hover:bg-slate-50">Beratung buchen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="module" class="py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-extrabold text-ink-900">Module im Überblick</h2>
+          <p class="mt-2 text-slate-600">Skalierbare Software-Bausteine für jede Betriebsgröße. Kombinierbar mit Quorion Hardware und Worldline Terminals.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">QMP Kassensoftware</h3>
+            <p class="mt-2 text-sm text-slate-600">Modulare Basis mit Artikelpflege, Mitarbeitermanagement, Finanzberichten und Fiskalfunktionen (GoBD/RKSV).</p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-500">
+              <li>• Layout-Editor für Tische &amp; Warengruppen</li>
+              <li>• Rabatt- und Gutscheinverwaltung</li>
+              <li>• Benutzerrechte &amp; Zugriffscodes</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">QCloud Info</h3>
+            <p class="mt-2 text-sm text-slate-600">Browserbasierte Dashboards für Umsätze, Journal und Artikelbestände – live oder historisch abrufbar.</p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-500">
+              <li>• KPI-Widgets &amp; Export nach Excel</li>
+              <li>• Filial- und Benutzerfilter</li>
+              <li>• Benachrichtigungen per E-Mail</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">QCloud Login</h3>
+            <p class="mt-2 text-sm text-slate-600">Sicherer Fernzugriff für Wartung, Updates, Backups und Programmierarbeiten.</p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-500">
+              <li>• Verschlüsselte Verbindung &amp; Audit-Logs</li>
+              <li>• Remote-Updates &amp; Datensicherung</li>
+              <li>• Hotline-Support ohne Anfahrt</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">Tischbestellungs-App</h3>
+            <p class="mt-2 text-sm text-slate-600">Digitale Speisekarte mit QR-Bestellung, Payment und Push-Nachrichten an Küche &amp; Bar.</p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-500">
+              <li>• Branding im Unternehmensdesign</li>
+              <li>• Echtzeit-Synchronisation mit QMP</li>
+              <li>• Optionale Integration von Lieferdiensten</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">POS Displays Kundenanzeigen</h3>
+            <p class="mt-2 text-sm text-slate-600">Moderne Kundendisplays für Upselling, Wartezeiten-Informationen und digitale Belege.</p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-500">
+              <li>• Playlist-Steuerung via QCloud</li>
+              <li>• Kampagnenplanung &amp; Auswertung</li>
+              <li>• Unterstützung für Video &amp; Static Ads</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-brand-100 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">QSC Kassenprogramm</h3>
+            <p class="mt-2 text-sm text-slate-600">Branchenspezifische Lösung für Schnellrestaurants &amp; Lieferdienste mit Fahrerabrechnung und Lieferrouten.</p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-500">
+              <li>• Bestellmonitor &amp; Küchensteuerung</li>
+              <li>• Integration zu Webshop &amp; App</li>
+              <li>• Gutscheine &amp; Bonusprogramme</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflows" class="bg-slate-50 py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-extrabold text-ink-900">Workflows &amp; Automatisierungen</h2>
+          <p class="mt-2 text-slate-600">So spielen Hardware und Software zusammen – von der Bestellung bis zur Auswertung.</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">Bestellung &amp; Produktion</h3>
+            <p class="mt-2 text-sm text-slate-600">Bestellungen gelangen direkt von QTouch oder QR-App an Küche, Bar oder Produktion – inklusive Priorisierung und Allergenen.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">Zahlung &amp; Beleg</h3>
+            <p class="mt-2 text-sm text-slate-600">Worldline Terminals senden Transaktionsdaten zurück an die Kasse, digitale Belege werden via QCloud archiviert.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">Reporting &amp; Controlling</h3>
+            <p class="mt-2 text-sm text-slate-600">QCloud Info liefert Umsatzreports, offene Posten und Export-Schnittstellen für Treuhand &amp; ERP.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="integrationen" class="py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-extrabold text-ink-900">Integrationen &amp; Schnittstellen</h2>
+          <p class="mt-2 text-slate-600">Wir verbinden Ihre Kasse mit bestehenden Systemen und sichern reibungslose Abläufe.</p>
+        </div>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">Treuhand &amp; Buchhaltung</h3>
+            <p class="mt-2 text-sm text-slate-600">DATEV, Sage, Abacus &amp; Bexio Exporte, automatisierte Umsatzreports, revisionssichere Datenbereitstellung.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">E-Commerce &amp; Delivery</h3>
+            <p class="mt-2 text-sm text-slate-600">Anbindung an Webshops, Lieferplattformen und Gutschein-Portale inklusive Bestandsabgleich.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">Hotel &amp; PMS</h3>
+            <p class="mt-2 text-sm text-slate-600">Schnittstellen zu PMS-Systemen für Zimmerbuchung, Debitoren und Konsumationen auf Zimmer.</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <h3 class="text-lg font-semibold text-ink-900">API &amp; individuelle Projekte</h3>
+            <p class="mt-2 text-sm text-slate-600">Wir entwickeln kundenspezifische Erweiterungen, Dashboards und Integrationen mit Dritt-APIs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-brand-50/40 py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h2 class="text-3xl font-extrabold text-ink-900">Ihr digitales Kassensystem in 4 Schritten</h2>
+            <ol class="mt-4 space-y-3 text-sm text-slate-600">
+              <li><span class="font-semibold text-brand-700">1.</span> Analyse Ihrer Prozesse &amp; Datenquellen</li>
+              <li><span class="font-semibold text-brand-700">2.</span> Auswahl der Module inkl. Schnittstellen</li>
+              <li><span class="font-semibold text-brand-700">3.</span> Einrichtung, Schulung &amp; Testbetrieb</li>
+              <li><span class="font-semibold text-brand-700">4.</span> Laufende Betreuung mit QCloud Monitoring</li>
+            </ol>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-soft ring-1 ring-brand-100">
+            <h3 class="text-xl font-semibold text-ink-900">Kostenlose Erstberatung</h3>
+            <p class="mt-2 text-sm text-slate-600">Wir zeigen Ihnen live, wie QCloud Info &amp; Login funktionieren und welche Module den größten Nutzen bringen.</p>
+            <a href="#kontakt" class="mt-4 inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-700">Termin sichern</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="py-20">
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+          <h2 class="text-3xl font-extrabold text-ink-900">Demo &amp; Angebot anfordern</h2>
+          <p class="mt-2 text-slate-600">Wir richten Testsysteme ein, zeigen Dashboards und planen gemeinsam den Rollout inklusive Schulung.</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-600">
+            <li><span aria-hidden="true">•</span> Remote- oder Vor-Ort-Demo</li>
+            <li><span aria-hidden="true">•</span> Individuelle Module &amp; Schnittstellen</li>
+            <li><span aria-hidden="true">•</span> Support durch Schweizer Team</li>
+          </ul>
+        </div>
+        <form class="space-y-4 rounded-2xl bg-white p-6 shadow-soft ring-1 ring-slate-200" action="#" method="post" aria-label="Kontaktformular">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="flex flex-col gap-1">
+              <label class="text-sm font-medium text-slate-700" for="first-name">Vorname*</label>
+              <input id="first-name" name="first-name" class="w-full rounded-lg bg-slate-50 px-4 py-3 ring-1 ring-slate-200 outline-none transition focus:ring-2 focus:ring-brand-600" placeholder="Vorname" required autocomplete="given-name" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="text-sm font-medium text-slate-700" for="email">E-Mail*</label>
+              <input id="email" name="email" type="email" class="w-full rounded-lg bg-slate-50 px-4 py-3 ring-1 ring-slate-200 outline-none transition focus:ring-2 focus:ring-brand-600" placeholder="E-Mail" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="text-sm font-medium text-slate-700" for="company">Firma / Standort</label>
+            <input id="company" name="company" class="w-full rounded-lg bg-slate-50 px-4 py-3 ring-1 ring-slate-200 outline-none transition focus:ring-2 focus:ring-brand-600" placeholder="Firma oder Standort" autocomplete="organization" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label class="text-sm font-medium text-slate-700" for="message">Ihre Anfrage</label>
+            <textarea id="message" name="message" rows="3" class="w-full rounded-lg bg-slate-50 px-4 py-3 ring-1 ring-slate-200 outline-none transition focus:ring-2 focus:ring-brand-600" placeholder="Welche Module interessieren?"></textarea>
+          </div>
+          <button type="submit" class="w-full rounded-lg bg-brand-600 py-3 font-semibold text-white shadow-glow transition hover:bg-brand-700">Kostenlose Demo anfragen</button>
+          <p class="text-xs text-slate-500">Mit Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß Datenschutz zu.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink-900 text-slate-300">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+      <p>© 2025 MK Kassen – Basel, Schweiz</p>
+      <address class="not-italic text-sm">Bleichestrasse 3 · +41 61 681 2030 · <a class="underline decoration-brand-500 decoration-2 transition hover:text-white" href="mailto:email@mkkassen.com">email@mkkassen.com</a></address>
+      <nav class="space-x-4 text-sm" aria-label="Footer">
+        <a href="#" class="transition hover:text-white">Impressum</a>
+        <a href="#" class="transition hover:text-white">Datenschutz</a>
+        <a href="#" class="transition hover:text-white">AGB</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const trigger = document.querySelector('[data-mobile-nav-trigger]');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (trigger && mobileMenu) {
+      trigger.addEventListener('click', () => {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        trigger.setAttribute('aria-expanded', String(!isExpanded));
+        trigger.querySelector('span').textContent = isExpanded ? 'Navigation öffnen' : 'Navigation schließen';
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
